@@ -3,10 +3,10 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Baisen Wang', message:'This is my Express Portfolio Site!'});
+  res.render('index', { title: 'Baisen Wang', message:'--A software programmer'});
 });
-router.get('/aboutMe', function(req, res, next) {
-  res.render('aboutMe', { title: 'About me', message:'Baisen Wang!'});
+router.get('/#aboutMe', function(req, res, next) {
+  res.render('index/#aboutMe', { title: 'About me', message:'Baisen Wang!'});
 });
 
 router.get('/services', function(req, res, next) {
@@ -17,6 +17,9 @@ router.get('/projects', function(req, res, next) {
 });
 router.get('/contactMe', function(req, res, next) {
   res.render('contactMe', { title: 'Contact Me', message:'Here is the contact information of me.'});
+});
+router.get('/test', function(req, res, next) {
+  res.render('test', { title: 'Contact Me', message:'Here is the contact information of me.'});
 });
 
 module.exports = router;

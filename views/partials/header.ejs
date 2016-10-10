@@ -1,19 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
     <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
         <title><%= title %></title>
         <!-- css -->
-        <link type="text/css" href="/stylesheets/bootstrap.min.css" rel="stylesheet">
-        <link type="text/css" href="/stylesheets/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="/stylesheets/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="/stylesheets/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     </head>
     <body>
-        <nav class="nav navbar-default">
-            <ul class="nav navbar-nav">
-                <li><a href="/">Home</a></li>
-                <li><a href="/aboutMe">About Me</a></li>
-                <li><a href="/projects">Projects</a></li>
-                <li><a href="/services">Services</a></li>
-                <li><a href="/contactMe">Contact Me</a></li>
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+            <a class="grey-text" id="logo-container"class="brand-logo">Baisen Wang</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a class="grey-text" href="/">Home</a></li>
+                <li><a class="grey-text" href="/aboutMe">About Me</a></li>
+                <li><a class="grey-text" href="/projects">Projects</a></li>
+                <li><a class="grey-text" href="/services">Services</a></li>
+                <li><a class="grey-text" href="/contactMe">Contact Me</a></li>
+
+                <li><a class="grey-text" href="/test">Contact Me</a></li>
             </ul>
-        </nav>
+
+            <ul id="nav-mobile" class="side-nav">
+                <li><a class="grey-text" href="#">Navbar Link</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
