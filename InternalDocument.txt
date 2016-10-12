@@ -1,0 +1,10 @@
+Author: Baisen Wang
+App name: My Portfolio
+
+total five pages: include home, about me, projects, services and contact me
+
+to describe my Portfolio
+
+
+I used a tamplate for my html and css code, but I don't remember where it comes from.
+It is a previous project I did for an another student's communication presentation.
