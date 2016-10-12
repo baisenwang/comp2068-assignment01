@@ -8,8 +8,13 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var projects = require('./routes/projects');
 
 var app = express();
+// connect to mongodb with mongoose
+var mongoose = require('mongoose');
+var config = require('./config/globalVars');
+mongoose.connect(config.db);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -25,7 +30,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
-
+app.use('/projects', projects);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

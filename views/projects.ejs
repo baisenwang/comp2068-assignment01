@@ -31,55 +31,14 @@
                 </div>
             </div>
             <div class="col s12 m12">
+                <% for (var i = 0; i < projects.length; i++) { %>
                 <div class="col s12 m3">
                     <div class="icon-block">
-                        <h5 class="center">Java Accounting Software</h5>
-                        <p class="light">
-                        <li>PDF parser library</li>
-                        <li>ODBC</li>
-                        <li>File read and write</li>
-                        <li>HashMap</li>
-                        <li>Sorting algorithm</li>
-                        </p>
+                        <h5 class="center"><%= projects[i].title%></h5>
+                        <p class="light"><%= projects[i].content%></p>
                     </div>
                 </div>
-                <div class="col s12 m3">
-                    <div class="icon-block">
-                        <h5 class="center">Java<br/> War Game</h5>
-                        <p class="light">
-                        <li>GUI design</li>
-                        <li>Add images</li>
-                        <li>Object oriented</li>
-                        <li>Composition</li>
-                        <li>Polymorphism</li>
-                        </p>
-                    </div>
-                </div>
-                <div class="col s12 m3">
-                    <div class="icon-block">
-                        <h5 class="center">Websites<br/>Static & Dynamic</h5>
-                        <p class="light">
-                        <li>PHP</li>
-                        <li>HTML5</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
-                        <li>MVC</li>
-                        </p>
-                    </div>
-                </div>
-                <div class="col s12 m3">
-                    <div class="icon-block">
-                        <h5 class="center">C#<br/>Final assignment</h5>
-                        <p class="light">
-                        <li>Print</li>
-                        <li>GUI</li>
-                        <li>CSS</li>
-                        <li>Design</li>
-                        <li>MVC</li>
-                        </p>
-                    </div>
-                </div>
-
+                <% } %>
             </div>
 
 
