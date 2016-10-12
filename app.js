@@ -6,6 +6,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+// declare routers
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var projects = require('./routes/projects');
@@ -13,6 +14,7 @@ var projects = require('./routes/projects');
 var app = express();
 // connect to mongodb with mongoose
 var mongoose = require('mongoose');
+// configing database
 var config = require('./config/globalVars');
 mongoose.connect(config.db);
 
@@ -28,9 +30,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// use routers
 app.use('/', routes);
 app.use('/users', users);
 app.use('/projects', projects);
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

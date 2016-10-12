@@ -1,7 +1,8 @@
+//author:baisen wang
 // link to mongoose
 var mongoose = require('mongoose');
 
-
+// create a project schema
 var projectSchema = new mongoose.Schema({
     title: {
         type: String,
@@ -14,5 +15,5 @@ var projectSchema = new mongoose.Schema({
 });
 
 // make this schema public using the schema defined above
-// note the public class name is singular and starts with a Capital
+// make the schema public
 module.exports = mongoose.model('Project', projectSchema);

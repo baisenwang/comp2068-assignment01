@@ -18,18 +18,19 @@
     <div class="parallax"><img src="/images/background5.jpg" alt="Unsplashed background img 1"></div>
 </div>
 <div class="container">
-    <form action="/contactMe" method="post">
+    <h2><%=head%></h2>
+    <form method="post">
         <p class="form_name">
             <label for="yourname">Name:</label>
-            <input id="yourname" placeholder="Please type your name" name="name" required="" size="40" type="text">
+            <input id="yourname" name="yourname" placeholder="Please type your name" name="name" required="" size="40" type="text">
         </p>
         <p class="form_email">
             <label for="youremail">Email:</label>
-            <input id="youremail" placeholder="Please type your e-mail" name="email" required="" size="40" type="email">
+            <input id="youremail" name="youremail" placeholder="Please type your e-mail" name="email" required="" size="40" type="email">
         </p>
         <p class="form_textarea">
             <label>What do you want to say?</label>
-            <textarea id="yourmessage" name="message" placeholder="What do you want to say to me?" required=""></textarea>
+            <textarea id="yourmessage" name="yourmessage" name="message" placeholder="What do you want to say to me?" required=""></textarea>
         </p>
         <p><input value="Submmit" class="lead-form-bottom-submit" type="submit"></p>
     </form>

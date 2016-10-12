@@ -5,6 +5,8 @@ total five pages: include home, about me, projects, services and contact me
 
 to describe my Portfolio
 
+in project page I used AngularJS and in the contact me page I used the nodemailer to send a email to myself when somebody leave me a message.
+
 
 I used a tamplate for my html and css code, but I don't remember where it comes from.
 It is a previous project I did for an another student's communication presentation.

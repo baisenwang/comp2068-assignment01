@@ -1,3 +1,4 @@
+//author:baisen wang
 var express = require('express');
 var router = express.Router();
 
@@ -5,7 +6,7 @@ var router = express.Router();
 var Project = require('../models/project');
 
 router.get('/', function(req, res, next) {
-
+    //find data in database
     Project.find(function(err, projects) {
         if (err) {
             console.log(err);
@@ -20,4 +21,5 @@ router.get('/', function(req, res, next) {
         }
     });
 });
+// make the router public
 module.exports = router;

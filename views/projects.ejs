@@ -1,5 +1,7 @@
 <!-- baisen wang-->
 <%- include partials/header.ejs %>
+
+<!-- big picture head-->
 <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
         <div class="container">
@@ -9,7 +11,7 @@
                 <h5 class="white-text header col s12 light" style="color:black;"><%= message%></h5>
             </div>
             <div class="row center">
-                <a href="#summary" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">What did I do?</a>
+                <a href="#summary" class="btn-large waves-effect waves-light teal lighten-1">What did I do?</a>
             </div>
             <br><br>
 
@@ -18,11 +20,9 @@
     <div class="parallax"><img src="/images/background3.jpg" alt="Unsplashed background img 1"></div>
 </div>
 
-
+<!--content-->
 <div class="container">
     <div class="section">
-
-        <!--   Icon Section   -->
         <div id="summary" class="row">
             <div class="col s12 m12">
                 <div class="icon-block">
@@ -31,6 +31,7 @@
                 </div>
             </div>
             <div class="col s12 m12">
+                <!--Load data from database-->
                 <% for (var i = 0; i < projects.length; i++) { %>
                 <div class="col s12 m3">
                     <div class="icon-block">
@@ -40,10 +41,7 @@
                 </div>
                 <% } %>
             </div>
-
-
         </div>
-
     </div>
 </div>
 <%- include partials/footer.ejs %>
