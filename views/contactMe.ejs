@@ -1,5 +1,35 @@
 <%- include partials/header.ejs %>
-<h1><%= title %></h1>
-<p><%= message %></p>
-<p>My email: Baisen.wang@mygeorgian.ca</p>
+<div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+        <div class="container">
+            <br><br>
+            <h1 class="header center teal-text text-lighten-1 " ><%= title%></h1>
+            <div class="row center">
+                <h5 class="black-text header col s12 light" style="color:black;"><%= message%></h5>
+            </div>
+            <div class="row center">
+                <a href="#summary" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Want to know about me?</a>
+            </div>
+            <br><br>
+
+        </div>
+    </div>
+    <div class="parallax"><img src="/images/background5.jpg" alt="Unsplashed background img 1"></div>
+</div>
+<div class="container">
+    <form action="/contactMe" method="post">
+        <p class="form_name">
+            <input id="yourname" placeholder="Please type your name" name="name" required="" size="40" type="text">
+        </p>
+        <p class="form_email">
+            <input id="youremail" placeholder="Please type your e-mail" name="email" required="" size="40" type="email">
+        </p>
+        <p class="form_textarea">
+            <textarea id="yourmessage" name="message" placeholder="What do you want to say to me?" required=""></textarea>
+        </p>
+        <p><input value="Submmit" class="lead-form-bottom-submit" type="submit"></p>
+    </form>
+
+</div>
+
 <%- include partials/footer.ejs %>
